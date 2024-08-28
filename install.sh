@@ -55,7 +55,7 @@ install_packages
 if ! [ -x "$PREFIX/bin/xray" ]; then
     wget https://github.com/XTLS/Xray-core/releases/download/v1.8.13/Xray-android-arm64-v8a.zip
     unzip Xray-android-arm64-v8a.zip
-    mv xray $PREFIX/bin
+    sudo mv xray $PREFIX/bin
     rm README.md geoip.dat geosite.dat LICENSE Xray-android-arm64-v8a.zip
 
     if [ -x "$PREFIX/bin/xray" ]; then
